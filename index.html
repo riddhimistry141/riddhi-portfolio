@@ -2,96 +2,140 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Riddhi Mistry | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <img src="profile.jpeg" alt="Riddhi Mistry" class="profile-img" />
-      <h1>Hello, I'm Riddhi Mistry 👋</h1>
-      <p>Full Stack Developer | Data Analyst | Creative Thinker</p>
-      <a href="#contact" class="btn">Get in Touch</a>
-    </header>
 
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I’m a Computer Science and Engineering student at R. N. G. Patel Institute of Technology.
-        I enjoy building full-stack web applications and analyzing data to extract meaningful insights.
-        With a background in both frontend and backend development, I aim to build scalable, user-focused solutions.
-      </p>
-    </section>
+  <header>
+    <div class="contaniner">
+     <h1 class="logo">Portfolio.</h1>
+       <nav class="navbar">
+       <a href="#home" class="active">Home</a>
+       <a href="#services">Services</a>
+       <a href="#skills">Skills</a>
+       <a href="#projects">Projects</a>
+       <a href="#contact">Contact</a>
+     </nav>
+    </div>
+  </header>
 
-    <section>
-      <h2>Technical Skills</h2>
-      <ul>
-        <li><strong>Languages:</strong> HTML, CSS, JavaScript, PHP, Python</li>
-        <li><strong>Databases:</strong> MySQL</li>
-        <li><strong>Tools & Frameworks:</strong> Bootstrap, Git, VS Code</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>Food Store Website</h3>
-        <p>Web app for ordering food online with delivery/takeaway options and a test-mode payment gateway.</p>
+  <!-- Home Section -->
+  <section id="home">
+    <div class="home-content">
+      <h2>Hello, It's Me</h2>
+      <h1>Riddhi Mistry</h1>
+      <h3>I am a <span class="typing-text"></span></h3>
+      <p>I'm a web designer with extensive experience for over 3 years...</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://github.com/riddhimistry141"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/riddhi-mistry-832202289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
       </div>
-      <div class="project">
-        <h3>Fake News Detection</h3>
-        <p>Python-based ML model using NLP techniques to classify real vs. fake news headlines.
-        <br><a href="https://github.com/yourusername/fake-news-detection" target="_blank">View on GitHub</a></p>
+      <a href="#about" class="btn grow-glow">More About Me</a>
+    </div>
+    <div class="home-img">
+      <img src="profile.jpg" alt="Profile Image" />
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2 class="section-title">My <span>Services</span></h2>
+    <div class="service-container">
+      <div class="service-box card-hover">
+        <i class="fas fa-code"></i>
+        <h3>UI/UX Design</h3>
+        <p>Creating user-centered interfaces for web and mobile applications.</p>
+        <a href="#" class="btn grow-glow">Learn More</a>
       </div>
-    </section>
+      <div class="service-box card-hover">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Web Development</h3>
+        <p>Building responsive and performant websites using modern tech.</p>
+        <a href="#" class="btn grow-glow">Learn More</a>
+      </div>
+      <div class="service-box card-hover">
+        <i class="fas fa-database"></i>
+        <h3>Backend Solutions</h3>
+        <p>Creating and managing secure backend systems and APIs.</p>
+        <a href="#" class="btn grow-glow">Learn More</a>
+      </div>
+    </div>
+  </section>
 
-    <section>
-      <h2>Experience / Internships</h2>
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2 class="section-title">My <span>Skills</span></h2>
+    <div class="service-container">
+      <div class="service-box card-hover">
+        <h3>HTML</h3>
+        <div class="bar"><div class="progress html"></div></div>
+      </div>
+      <div class="service-box card-hover">
+        <h3>CSS</h3>
+        <div class="bar"><div class="progress css"></div></div>
+      </div>
+      <div class="service-box card-hover">
+        <h3>JavaScript</h3>
+        <div class="bar"><div class="progress js"></div></div>
+      </div>
+      <div class="service-box card-hover">
+        <h3>Fa-Python</h3>
+        <div class="bar"><div class="progress fa-python"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 class="section-title">Latest <span>Projects</span></h2>
+    <div class="service-container">
+      <div class="service-box card-hover">
+        <img src="Project1.png" alt="Traffic preadiction" style="width:100%; border-radius:10px;">
+        <h3>Traffic Prediction </h3>
+      </div>
+      <div class="service-box card-hover">
+        <img src="Project2.png" alt="Food Store" style="width:50%; border-radius:10px;">
+        <h3>Food Store</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+  <h2 class="section-title">Get in <span>Touch</span></h2>
+  <div class="contact-wrapper">
+    
+    <!-- Left: Contact Info -->
+    <div class="contact-card">
+      <h3>Contact Info </h3>
       <ul>
-        <li><strong>GREEN AI (Python Intern)</strong> – Built small-scale AI modules and automated Python scripts.</li>
-        <li><strong>Full Stack Internship (Self Projects)</strong> – Created web apps with frontend + backend integration.</li>
+        <li><i class="fas fa-envelope"></i> riddhimistry141@gmail.com</li>
+        <li><i class="fas fa-phone"></i> +91 72029 55105</li>
+        <li><i class="fas fa-map-marker-alt"></i> Gandeva, Navsari, Gujarat, India</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <h2>Education</h2>
-      <p>
-        Bachelor of Engineering in Computer Science <br />
-        R. N. G. Patel Institute of Technology <br />
-        Expected Graduation: 2026
-      </p>
-    </section>
+    <!-- Right: Contact Form -->
+    <div class="contact-card">
+      <h3>Send a Message</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn grow-glow">Send</button>
+      </form>
+    </div>
 
-    <section>
-      <h2>Certifications</h2>
-      <ul>
-        <li>Python for Everybody – Coursera</li>
-        <li>Frontend Web Development – Udemy</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Hobbies & Interests</h2>
-      <p>
-        I love painting landscapes, cooking creative dishes, and designing fun web layouts.
-        I also enjoy writing blog posts on coding topics.
-      </p>
-    </section>
-
-    <section>
-      <h2>Download My Resume</h2>
-      <a href="Riddhi_Mistry_Resume.pdf" download class="resume-btn">Download PDF</a>
-    </section>
-
-    <footer id="contact">
-      <h2>Contact</h2>
-      <p>
-        <a href="https://www.linkedin.com/in/riddhi-mistry-832202289" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
-        <a href="mailto:riddhimistry141@gmail.com">Email</a>
-      </p>
-    </footer>
   </div>
+</section>
+
+<!-- Scroll to top -->
+<a href="#" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
 </body>
 </html>
